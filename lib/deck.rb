@@ -20,4 +20,12 @@ class Deck
      percent = high_ranking_cards.count.to_f / @cards.count.round * 100
      percent.round(2)
   end
+
+  def remove_card
+    @cards.shift
+  end
+
+  def add_card(card)
+    @cards << card
+  end
 end
